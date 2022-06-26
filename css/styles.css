@@ -63,12 +63,10 @@ address {
 /* General */
 
 body {
-    width: 1600px;
     background-color: var(--main-site-color);
     color: var(--main-text-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02em;
-    margin: 0 auto;
 }
 
 /*Site sections */
