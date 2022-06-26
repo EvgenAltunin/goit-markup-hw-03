@@ -233,11 +233,6 @@ button {
     text-align: center;
 }
 
-.container.hero {
-    
-    width: 1600px;
-}
-
 .hero-title {
     color: var(--white-text-color);
     font-weight: 900;
@@ -246,6 +241,7 @@ button {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 button.hero {
