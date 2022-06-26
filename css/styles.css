@@ -443,7 +443,8 @@ img.project {
 
 .logo.footer {
     display: block;
-
+    
+    width: 145px;
     padding-top: 60px;
     padding-bottom: 20px;
 }
