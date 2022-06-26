@@ -256,8 +256,6 @@ button:hover, button:focus {
     color: var(--site-accent-color);
 }
 
-
-
 /* Benefits */
 
 .benefits-list {
@@ -357,7 +355,6 @@ img.worker {
     margin-left: 8px;
 }
 
-
 button.portfolio {
     
     background-color: var(--button-color);
@@ -442,10 +439,6 @@ img.project {
 /* Footer */
 .footer {
     background-color: var(--secondary-site-color);
-}
-
-.container.footer {
-
 }
 
 .logo.footer {
