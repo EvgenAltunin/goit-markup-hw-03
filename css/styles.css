@@ -31,6 +31,7 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+
 }
 
 /* Свойства для корректного отображения картинок */
@@ -78,10 +79,6 @@ body {
 
 }
 
-.section.no-padding {
-    padding-top: 0;
-    padding-bottom: 0;
-}
 
 /* Page titles */
 .hiden-title {
@@ -112,7 +109,7 @@ body {
 
 /* Button */
 button {
-    display: inline-block;
+    display: block;
     background-color: transparent;
     color: var(--black-color);
     box-shadow: none;
@@ -135,10 +132,12 @@ button {
 
 /* Header */
 
+.page-header {
+    border-bottom: 1px solid var(--header-border-bottom);
+}
+
 .container.header {
     display: flex;
-    border-bottom: 1px solid var(--header-border-bottom);
-
 }
 
 .logo {
@@ -179,6 +178,11 @@ button {
 }
 
 .nav-link, .link-current {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -226,8 +230,25 @@ button {
 /* Hero */
 
 .hero {
-    background-color: var(--secondary-site-color);
+
     text-align: center;
+    
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: var(--secondary-site-color);
+
+}
+
+.container.hero {
+    max-width: 1600px;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-right: 0;
+    padding-left: 0;
+
+    /* outline: 2px solid tomato; */
 }
 
 .hero-title {
@@ -238,14 +259,19 @@ button {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
+    width: 700px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button.hero {
+    min-width: 200px;
+    
     background-color: var(--site-accent-color);
     color: var(--white-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
 
 button:hover, button:focus {
@@ -283,6 +309,12 @@ button:hover, button:focus {
 
 /* What we do */
 
+.section.no-top-padding {
+    padding-top: 0;
+    background-color: var(--container-color);
+
+}
+
 .work-list {
     display: flex;
 }
@@ -293,9 +325,8 @@ button:hover, button:focus {
 
 /* Our team */
 
-.container.workers {
-    padding-top: 94px;
-    background-color: var(--container-color);
+.section.workers {
+    background-color: var(--button-color);
 }
 
 .workers-list {
@@ -358,7 +389,7 @@ button.portfolio {
     color: var(--main-text-color);
 
     padding: 6px 22px;
-    border-radius: 0;
+    border-radius: 4px;
     min-width: 73px;
     box-shadow: none;
 
@@ -405,11 +436,13 @@ button.portfolio:hover, button.portfolio:focus {
     margin-bottom: 0;
 }
 
-
 img.project {
     padding-bottom: 20px;
 }
 
+.card-text {
+    padding: 20px 24px 20px 24px
+}
 .project-title {
     color: var(--main-text-color);
     font-weight: 700;
@@ -417,9 +450,7 @@ img.project {
     line-height: 2;
     letter-spacing: 0.06em;
 
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 }
 
 .project-paragraph {
@@ -428,22 +459,29 @@ img.project {
     line-height: 1.88;
     letter-spacing: 0.03em;
 
-    padding-bottom: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 /* ============================================================== */
 /* Footer */
 .footer {
     background-color: var(--secondary-site-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container.footer {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .logo.footer {
     display: block;
+    min-width: 145px;
     
     width: 145px;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .logo-white-word {
@@ -451,6 +489,9 @@ img.project {
 }
 
 .adress-link, .footer-contact-link {
+    display: block;
+    
+
     color: var(--white-text-color);
     font-style: normal;
     font-size: 14px;
@@ -461,7 +502,13 @@ img.project {
     margin-bottom: 9px;
 }
 
+.adress-link {
+    min-width: 230px;
+}
+
 .footer-contact-link {
+    min-width: 130px;
+
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -474,5 +521,4 @@ img.project {
 }
 
 address {
-    padding-bottom: 60px;
 }
