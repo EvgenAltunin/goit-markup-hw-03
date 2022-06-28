@@ -58,7 +58,7 @@ address {
     --button-color: #F5F4FA;
     --container-color: #F5F4FA;
     --header-border-bottom: #ECECEC;
-    --card-border-bottom-color: #F0F0F0;
+    --card-border--color: #EEEEEE;
 }
 
 /* General */
@@ -213,6 +213,10 @@ button {
 }
 
  .contact-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -311,7 +315,7 @@ button:hover, button:focus {
 
 .section.no-top-padding {
     padding-top: 0;
-    background-color: var(--container-color);
+    background-color: var(--main-site-color);
 
 }
 
@@ -346,8 +350,11 @@ button:hover, button:focus {
     margin-left: 30px;
 }
 
-img.worker {
-    margin-bottom: 30px;
+
+
+.worker-description {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .worker-title, .worker-paragraph {
@@ -360,13 +367,13 @@ img.worker {
 }
 .worker-title {
     font-weight: 500;
+    
     color: var(--main-text-color);
-    padding-bottom: 10px;
+
+    margin-bottom: 10px;
 }
 
-.worker-paragraph {
-    padding-bottom: 30px;
-}
+
 /* =============================================================== */
 /* Portfolio filter (portfolio.html) */
 
@@ -418,11 +425,8 @@ button.portfolio:hover, button.portfolio:focus {
 }
 
 .project-item {    
-    width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-
-    border-bottom: var(--card-border-bottom-color);
 
     /* outline: 2px solid tomato; */
 
@@ -437,11 +441,12 @@ button.portfolio:hover, button.portfolio:focus {
 }
 
 img.project {
-    padding-bottom: 20px;
+    display: block;
 }
 
 .card-text {
-    padding: 20px 24px 20px 24px
+    padding: 20px 24px 20px 24px;
+    border: 1px solid var(--card-border--color);
 }
 .project-title {
     color: var(--main-text-color);
